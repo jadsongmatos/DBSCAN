@@ -1,3 +1,10 @@
+"""
+ATIVIDADE PRÁTICA – DBSCAN
+Jadson Goulart de Matos (21103270) e Luan Daniel de Oliveira Melo (20102404)
+DEC0014-06655 (20231) - Inteligência Artificial e Computacional, UFSC
+6 de junho de 2023
+"""
+
 import pandas as pd
 import numpy as np
 from sklearn import tree

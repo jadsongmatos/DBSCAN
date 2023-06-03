@@ -48,14 +48,13 @@ plt.show()
 
 # Normalizando os dados
 scaler = StandardScaler()
-scaled_X_train = scaler.fit_transform(df)
-scaled_X_test = scaler.transform(df)
+scaled_df = scaler.fit_transform(df)
 
 # Initialize DBSCAN object for clustering
 dbscan = DBSCAN(eps=0.5, min_samples=5) 
 
 # Perform clustering on the normalized data
-dbscan.fit(scaled_X_train)
+dbscan.fit(scaled_df)
 
 # Retrieve the cluster labels for each data point
 cluster = np.array(dbscan.labels_)
